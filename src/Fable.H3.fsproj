@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>H3</RootNamespace>
+    <PackageId>Fable.H3</PackageId>
+    <Version>0.0.1-alpha</Version>
+    <Authors>Mark Frawley</Authors>
+    <Description>
+    H3 Js wrapper
+    </Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- <Compile Include="fable/H3.Interop.fs" /> -->
+    <Compile Include="H3.fs" />
+    <Compile Include="H3Test.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Browser.Dom" Version="2.4.0" />
+    <PackageReference Include="Fable.Core" Version="3.2.7" />
+  </ItemGroup>
+</Project>
