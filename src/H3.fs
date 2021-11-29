@@ -4,6 +4,10 @@ open Fable.Core
 open Fable.Core.JS
 
 let [<Import("*","h3-js")>] h3: H3_js.IExports = jsNative
+let [<Import("UNITS","h3-js")>] units : H3_js.UNITS = jsNative
+let [<Import("CoordIJ","h3-js")>] coordIJ : H3_js.CoordIJ = jsNative
+let [<Import("H3IndexInput","h3-js")>] h3IndexInput : H3_js.H3IndexInput = jsNative
+
 
 module H3_js =
 
