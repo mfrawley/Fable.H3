@@ -8,7 +8,8 @@ let [<Import("UNITS","h3-js")>] units : H3_js.UNITS = jsNative
 let [<Import("CoordIJ","h3-js")>] coordIJ : H3_js.CoordIJ = jsNative
 let [<Import("H3IndexInput","h3-js")>] h3IndexInput : H3_js.H3IndexInput = jsNative
 
-
+// lat, lng tuple
+type GeoLocation = float * float
 module H3_js =
 
     type [<AllowNullLiteral>] IExports =
